@@ -1,5 +1,5 @@
 "use client";
-import { collection } from "firebase/firestore";
+import { collection, orderBy, query } from "firebase/firestore";
 import { signOut, useSession } from "next-auth/react";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../firebase";
@@ -9,7 +9,11 @@ import NewChat from "./NewChat";
 function SideBar() {
   const { data: session } = useSession();
   const [chats, loading, error] = useCollection(
-    session && collection(db, "users", session.user?.email!, "chats")
+    session &&
+      query(
+        collection(db, "users", session.user?.email!, "chats"),
+        orderBy("createdAt", "desc")
+      )
   );
 
   return (
