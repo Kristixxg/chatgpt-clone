@@ -13,7 +13,7 @@ type Props = {
 function ChatInput({ chatId }: Props) {
   const [prompt, setPrompt] = useState("");
   const { data: session } = useSession();
-  const model = "test";
+  const model = "text-davinci-003";
 
   const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -61,7 +61,6 @@ function ChatInput({ chatId }: Props) {
       }),
     }).then(() => {
       // Toast to say successful
-      console.log("here");
       toast.success("ChatGPT has responded!", {
         id: notification,
       });
