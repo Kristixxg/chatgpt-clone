@@ -17,11 +17,15 @@ function HomePage() {
           </div>
 
           <div className="space-y-2">
-            <p className="infoText">Explain something to me</p>
             <p className="infoText">
-              "What is the difference between a dog and a cat?"
+              Got any creative ideas for a 10 year old’s birthday?
             </p>
-            <p className="infoText">"What is the color of the sun?"</p>
+            <p className="infoText">
+              "How do I make an HTTP request in Javascript?"
+            </p>
+            <p className="infoText">
+              "Explain quantum computing in simple terms"
+            </p>
           </div>
         </div>
 
@@ -36,9 +40,11 @@ function HomePage() {
               Remembers what user said earlier in the conversation
             </p>
             <p className="infoText">
-              "What is the difference between a dog and a cat?"
+              Allows user to provide follow-up corrections
             </p>
-            <p className="infoText">"What is the color of the sun?"</p>
+            <p className="infoText">
+              Trained to decline inappropriate requests
+            </p>
           </div>
         </div>
 
@@ -49,11 +55,15 @@ function HomePage() {
           </div>
 
           <div className="space-y-2">
-            <p className="infoText">Explain something to me</p>
             <p className="infoText">
-              "What is the difference between a dog and a cat?"
+              May occasionally generate incorrect information
             </p>
-            <p className="infoText">"What is the color of the sun?"</p>
+            <p className="infoText">
+              May produce harmful instructions or biased content
+            </p>
+            <p className="infoText">
+              Limited knowledge of world and events after 2021
+            </p>
           </div>
         </div>
       </div>
